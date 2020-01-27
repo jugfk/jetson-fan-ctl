@@ -1,6 +1,8 @@
 # jetson-fan-ctl (Korean Version)
 젯슨나노를 위한 오토매직 냉각팬 제어
 
+![image](https://raw.githubusercontent.com/jetsonworld/jetson-fan-ctl/master/01_Images/Waveshare_4pins_PWM_Fan.png)
+
 ## 요구 사항 :
 
 ### 하드웨어
