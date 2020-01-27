@@ -8,7 +8,7 @@
 ### 하드웨어
 이를 이해하려면 5V PWM 팬이 필요합니다.
 
-나는 Waveshare의 Jetson Nano 5V PWM 팬을 사용했다.
+나는 Waveshare의 Jetson Nano 5V PWM (4PIN) 팬을 사용했다.
 
 또한 4A 전원 공급 장치와 함께 전원 잭을 사용하는 것이 좋습니다.
 
