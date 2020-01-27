@@ -1,4 +1,4 @@
-# jetson-fan-ctl
+# jetson-fan-ctl(Korean Version)
 젯슨나노를 위한 오토매직 냉각팬 제어
 
 ## 요구 사항 :
