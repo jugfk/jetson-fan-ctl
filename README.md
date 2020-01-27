@@ -1,26 +1,27 @@
 # jetson-fan-ctl
-Automagic fan control for the Nvidia Jetson Nano
+젯슨나노를 위한 오토매직 냉각팬 제어
 
-## Requirements:
+## 요구 사항 :
 
-### Hardware
-You will need a 5V PWM fan for this to make any sense.  
-I used the **Noctua nf-a4x20 5V PWM** fan.
+### 하드웨어
+이를 이해하려면 5V PWM 팬이 필요합니다.
+나는 Noctua의 NF-a4x20 5V PWM 팬을 사용했다.
 
-Additionally, I recommend you use the barrel jack with a 4A power supply.  
+또한 4A 전원 공급 장치와 함께 전원 잭을 사용하는 것이 좋습니다.
 
-### Software
-I will assume you use the standard image on your jetson nano.
+### 소프트웨어
+나는 여러분이 jetson nano에서 표준 이미지를 사용한다고 가정하겠습니다.
 
-Python 3 should be pre-installed on the jetson nano.  
-You can check this using <code>python3 --version</code>  
-(3.5 or higher should be fine.)  
-otherwise, you can install it with  
+Python3은 jetson nano에 사전 설치되어 있어야합니다.  
+ 
+(3.5 이상은 괜찮을 것입니다.)을 사용하여 이것을 확인할 수 있습니다  
+
+<code>python3 --version</code> 
 
     sudo apt install python3-dev
 
 
-## How to install:
+## 설치하는 방법:
 run
 
     ./install.sh
