@@ -27,16 +27,16 @@ run
 
     ./install.sh
 
-The script will automatically run at boot time.
+스크립트는 부팅시 자동으로 실행됩니다.
 
 It's a set-it-and-forget-it type thing, unless you want to mess with the fan speeds.
 
 ## How to customize:
-open /etc/automagic-fan/config.json with your favorite editor (I'm using nano):  
+여러분이 좋아하는 편집기로 /etc/automagic-fan/config.json을 엽니 다 (vi를 사용하고 있습니다):  
 
     sudo nano /etc/automagic-fan/config.json
 
-you will find the following lines:
+다음 줄을 찾을 수 있습니다 :
 
     {
     "FAN_OFF_TEMP":20,
@@ -45,24 +45,24 @@ you will find the following lines:
     "MAX_PERF":1
     }
 
-<code>FAN_OFF_TEMP</code> is the temperature (°C) below which the fan is turned off.  
-<code>FAN_MAX_TEMP</code> is the temperature (°C) above which the fan is at 100% speed.  
-The script interpolates linearly between these two points.
+<code>FAN_OFF_TEMP</code> 팬이 꺼지는 온도 (° C)입니다.  
+<code>FAN_MAX_TEMP</code> 팬 속도가 100 % 이상인 온도 (°C)입니다. 
+스크립트는이 두 점 사이를 선형으로 보간합니다.
 
-<code>UPDATE_INTERVAL</code> tells the script how often to update the fan speed (in seconds).  
-<code>MAX_PERF</code> values greater than 0 maximize system performance by setting the CPU and GPU clock speeds to the maximum. 
+<code>UPDATE_INTERVAL</code> 팬 속도 (초)를 업데이트하는 스크립트에 종종 알려줍니다.  
+<code>MAX_PERF</code> 0보다 큰 값은 CPU 및 GPU 클럭 속도를 최대로 설정하여 시스템 성능을 최대화합니다. 
 
-You can use either integers (like 20) or floating point numbers (like 20.125) in each of these fields.  
-The temperature precision of the thermal sensors is 0.5 (°C), so don't expect this to be too precise.
+이러한 각 필드에서 정수 (예 : 20) 또는 부동 소수점 숫자 (예 : 20.125)를 사용할 수 있습니다.  
+온도센서의 온도 정밀도는 0.5(°C) 이므로 너무 정확하지는 않습니다.
 
-Any changes in the script will be will be applied after the next reboot.  
-You can run
+스크립트를 변경하면 다음에 다시 부팅 한 후에 적용됩니다.  
+당신은 실행할 수 있습니다.
 
     sudo service automagic-fan restart
 
-to apply changes immediately.
+즉시 변경 사항을 적용합니다.
 
-If you suspect something went wrong, please check:
+무언가 잘못되었다고 의심되면 다음을 확인하십시오.
 
     sudo service automagic-fan status
 
