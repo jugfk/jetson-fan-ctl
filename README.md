@@ -25,7 +25,7 @@ Python3은 jetson nano에 사전 설치되어 있어야합니다.
 
 
 ## 설치하는 방법:
-run
+먼저 터미널을 엽니다. 
 ```
 sh install.sh
 (혹은)
@@ -39,16 +39,20 @@ It's a set-it-and-forget-it type thing, unless you want to mess with the fan spe
 ## 사용자 커스터마이징하는 방법:
 여러분이 좋아하는 편집기로 /etc/automagic-fan/config.json을 엽니 다 (vi를 사용하고 있습니다):  
 
-    sudo nano /etc/automagic-fan/config.json
+```
+sudo nano /etc/automagic-fan/config.json
+```
 
 다음 줄을 찾을 수 있습니다 :
 
+```
     {
     "FAN_OFF_TEMP":20,
     "FAN_MAX_TEMP":50,
     "UPDATE_INTERVAL":2,
     "MAX_PERF":1
     }
+```
 
 <code>FAN_OFF_TEMP</code> 팬이 꺼지는 온도 (° C)입니다.  
 <code>FAN_MAX_TEMP</code> 팬 속도가 100 % 이상인 온도 (°C)입니다. 
@@ -63,14 +67,17 @@ It's a set-it-and-forget-it type thing, unless you want to mess with the fan spe
 스크립트를 변경하면 다음에 다시 부팅 한 후에 적용됩니다.  
 당신은 실행할 수 있습니다.
 
-    sudo service automagic-fan restart
+```
+sudo service automagic-fan restart
+```
 
 즉시 변경 사항을 적용합니다.
 
 무언가 잘못되었다고 의심되면 다음을 확인하십시오.
 
-    sudo service automagic-fan status
-
+```
+sudo service automagic-fan status
+```
 
 ## 출처:
 https://github.com/jetsonworld/jetson-fan-ctl/
