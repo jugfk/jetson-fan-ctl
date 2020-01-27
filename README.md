@@ -64,3 +64,7 @@ to apply changes immediately.
 If you suspect something went wrong, please check:
 
     sudo service automagic-fan status
+
+
+## 출처:
+https://github.com/jetsonworld/jetson-fan-ctl/
