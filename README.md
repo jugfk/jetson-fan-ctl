@@ -37,7 +37,7 @@ sh install.sh
 It's a set-it-and-forget-it type thing, unless you want to mess with the fan speeds.
 
 ## 사용자 커스터마이징하는 방법:
-여러분이 좋아하는 편집기로 /etc/automagic-fan/config.json을 엽니 다 (vi를 사용하고 있습니다):  
+여러분이 좋아하는 편집기로 /etc/automagic-fan/config.json을 엽니 다 (nano or vi를 사용하고 있습니다):  
 
 ```
 sudo nano /etc/automagic-fan/config.json
