@@ -81,3 +81,5 @@ sudo service automagic-fan status
 
 ## 출처:
 https://github.com/jetsonworld/jetson-fan-ctl/
+
+(Thank you for your precious devotion.)
