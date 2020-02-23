@@ -69,6 +69,8 @@ sudo nano /etc/automagic-fan/config.json
 
 ```
 sudo service automagic-fan restart
+sudo service automagic-fan start
+sudo service automagic-fan stop
 ```
 
 즉시 변경 사항을 적용합니다.
