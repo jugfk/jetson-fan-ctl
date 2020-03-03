@@ -31,9 +31,7 @@ Python3은 jetson nano에 사전 설치되어 있어야합니다.
 git clone https://github.com/jetsonworld/jetson-fan-ctl.git
 cd jetson-fan-ctl
 
-sh install.sh
-(혹은)
-./install.sh
+sudo sh install.sh
 ```
 
 스크립트는 부팅시 자동으로 실행됩니다.
