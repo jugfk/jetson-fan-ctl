@@ -21,6 +21,7 @@ Python3은 jetson nano에 사전 설치되어 있어야합니다.
 
 <code>python3 --version</code> 
 
+    sudo apt update
     sudo apt install python3-dev
 
 
