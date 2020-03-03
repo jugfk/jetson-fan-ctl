@@ -28,6 +28,9 @@ Python3은 jetson nano에 사전 설치되어 있어야합니다.
 ## 설치하는 방법:
 먼저 터미널을 엽니다. 
 ```
+git clone https://github.com/jetsonworld/jetson-fan-ctl.git
+cd jetson-fan-ctl
+
 sh install.sh
 (혹은)
 ./install.sh
